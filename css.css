@@ -1,0 +1,217 @@
+body {
+  background:blueviolet;
+  z-index:;
+}
+.first-div{
+  position: absolute;
+  background:linear-gradient(blueviolet,white,blueviolet);
+  width:98%;
+  color:blue;
+  left:1%;
+  height:150px;
+  z-index:1;
+  box-shadow:5px 5px 20px 5px black;
+
+}
+.box img{
+  box-shadow: 0px 5px 10px 0px;
+}
+.name{
+  position: fixed;
+  text-align: center;
+  left:35%;
+}
+.bt{
+  position:absolute;
+  background:darkmagenta;
+  top:158px;
+  height:30px;
+  width:98%;
+  left:1%;
+  z-index: 1;
+  box-shadow:3px 3px 15px 3px black;
+}
+button{
+  background: none;
+  color:white;
+  border:none;
+  height:30px;
+  width:130px;
+}
+button:hover{
+  background:indigo;
+  color:white;
+  border:none;
+  height:30px;
+  width:130px;
+}
+.second-div{
+  position:absolute;
+  top:188px;
+  left:1%;
+  width:98%;
+  background: linear-gradient(blueviolet,white,rgb(30,30,20));
+  height:543%;
+  box-shadow:5px 5px 20px 5px;
+}
+.dropdown{
+   position: relative;
+   display: inline-block;
+}
+.dropdowncontent{
+  display: none;
+  font-size:18px;
+  color:white;
+  position: absolute;
+  background-color:white;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 12px 16px;
+  border-radius:5px;
+  text-decoration: none;
+}
+.dropdown:hover .dropdowncontent{
+  display:table-column;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+p:hover{
+  color:blue;
+  transition: linear 0.5s;
+}
+.box{
+    padding-left: 5px;
+    padding-top: 0px;
+    background:linear-gradient(white,gray);
+    position: absolute;
+    left: 0px;
+    top: 44px;
+    width: 405px;
+    height: 336px;
+    border:none;
+}
+ul{
+  list-style-type: none;
+  border:2px solid white;
+  width:50%
+}
+.dropdown1{
+  position:absolute;
+  display:inline-block;
+}
+.dropdown-content1{
+  display:none;
+  position:absolute;
+  background-color:blueviolet;
+  min-width:160px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding:12px 16px;
+}
+.dropdown1:hover .dropdown-content1{
+  display:block;
+}
+
+.ani{
+  position: relative;
+  top:2050px;
+  left:360px;
+  width:800px;
+  height:370px;
+  background-image: url(ice.jpg);
+  animation-name: example;
+  animation-duration: 30s;
+  animation-duration-delay:2s;
+  animation-iteration-count: infinite;
+}
+@keyframes example{
+  10%{background-image: url(ice.jpg)}
+  15%{background-image: url(op1.jpg)}
+  20%{background-image: url(op2.jpg)}
+  30%{background-image: url(op3.jpg)}
+  40%{background-image: url(op4.jpg)}
+  50%{background-image: url(op5.jpg)}
+  60%{background-image: url(op6.jpg)}
+  70%{background-image: url(op7.jpg)}
+  75%{background-image: url(op8.jpg)}
+  80%{background-image: url(op9.jpg)}
+  90%{background-image: url(op10.jpg)}
+  100%{background-image: url(op11.jpg)}
+}
+div.ani{
+  box-shadow:0 10px 10px 5px rgba(0,0,0,0.5);
+}
+.content{
+  position: absolute;
+}
+.c_ani{
+  position: absolute;
+  top:1000px;
+  left:200px;
+  width:8px;
+  height:60px;
+  background: darkmagenta;
+  transition: width 1s;
+
+}
+.c_ani:hover{
+  width:200px;
+  color:white;
+}
+.c_ai{
+  position: absolute;
+  top:1400px;
+  right:140px;
+  width:8px;
+  height:60px;
+  background: darkmagenta;
+  transition: width 1s;
+}
+.c_ai:hover{
+  width:250px;
+  color:white;
+}
+.tag{
+  position: absolute;
+  top:1500px;
+  color:blue;
+  width:100%;
+  height:400px;
+}
+.text{
+  position: absolute;
+  top:650px;
+  left:23%;
+  color:black;
+  font-size:60px;
+}
+.footer{
+  position: absolute;
+  top:440%;
+  height: 800px;
+  width:100%;
+}
+.l{
+  position: absolute;
+  left:200px;
+  bottom: 100px;
+  height:50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.last{
+  color:white;
+  background: rgb(20,30,30);
+  position: absolute;
+  width:100%;
+  height:80px;
+  bottom:0px;
+}
+.o{
+  color:white;
+}
+.o:hover{
+  text-decoration: underline;
+}

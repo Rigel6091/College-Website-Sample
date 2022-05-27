@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <style>
+      body {
+  background:blueviolet;
+  z-index:;
+}
+.first-div{
+  position: absolute;
+  background:linear-gradient(blueviolet,white,blueviolet);
+  width:98%;
+  color:blue;
+  left:1%;
+  height:150px;
+  z-index:1;
+  box-shadow:5px 5px 20px 5px black;
+
+}
+.box img{
+  box-shadow: 0px 5px 10px 0px;
+}
+.name{
+  position: fixed;
+  text-align: center;
+  left:35%;
+}
+.bt{
+  position:absolute;
+  background:darkmagenta;
+  top:158px;
+  height:30px;
+  width:98%;
+  left:1%;
+  z-index: 1;
+  box-shadow:3px 3px 15px 3px black;
+}
+button{
+  background: none;
+  color:white;
+  border:none;
+  height:30px;
+  width:130px;
+}
+button:hover{
+  background:indigo;
+  color:white;
+  border:none;
+  height:30px;
+  width:130px;
+}
+.second-div{
+  position:absolute;
+  top:188px;
+  left:1%;
+  width:98%;
+  background: linear-gradient(blueviolet,white,rgb(30,30,20));
+  height:543%;
+  box-shadow:5px 5px 20px 5px;
+}
+.dropdown{
+   position: relative;
+   display: inline-block;
+}
+.dropdowncontent{
+  display: none;
+  font-size:18px;
+  color:white;
+  position: absolute;
+  background-color:white;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 12px 16px;
+  border-radius:5px;
+  text-decoration: none;
+}
+.dropdown:hover .dropdowncontent{
+  display:table-column;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+p:hover{
+  color:blue;
+  transition: linear 0.5s;
+}
+.box{
+    padding-left: 5px;
+    padding-top: 0px;
+    background:linear-gradient(white,gray);
+    position: absolute;
+    left: 0px;
+    top: 44px;
+    width: 405px;
+    height: 336px;
+    border:none;
+}
+ul{
+  list-style-type: none;
+  border:2px solid white;
+  width:50%
+}
+.dropdown1{
+  position:absolute;
+  display:inline-block;
+}
+.dropdown-content1{
+  display:none;
+  position:absolute;
+  background-color:blueviolet;
+  min-width:160px;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding:12px 16px;
+}
+.dropdown1:hover .dropdown-content1{
+  display:block;
+}
+
+.ani{
+  position: relative;
+  top:2050px;
+  left:360px;
+  width:800px;
+  height:370px;
+  background-image: url(ice.jpg);
+  animation-name: example;
+  animation-duration: 30s;
+  animation-duration-delay:2s;
+  animation-iteration-count: infinite;
+}
+@keyframes example{
+  10%{background-image: url(ice.jpg)}
+  15%{background-image: url(op1.jpg)}
+  20%{background-image: url(op2.jpg)}
+  30%{background-image: url(op3.jpg)}
+  40%{background-image: url(op4.jpg)}
+  50%{background-image: url(op5.jpg)}
+  60%{background-image: url(op6.jpg)}
+  70%{background-image: url(op7.jpg)}
+  75%{background-image: url(op8.jpg)}
+  80%{background-image: url(op9.jpg)}
+  90%{background-image: url(op10.jpg)}
+  100%{background-image: url(op11.jpg)}
+}
+div.ani{
+  box-shadow:0 10px 10px 5px rgba(0,0,0,0.5);
+}
+.content{
+  position: absolute;
+}
+.c_ani{
+  position: absolute;
+  top:1000px;
+  left:200px;
+  width:8px;
+  height:60px;
+  background: darkmagenta;
+  transition: width 1s;
+
+}
+.c_ani:hover{
+  width:200px;
+  color:white;
+}
+.c_ai{
+  position: absolute;
+  top:1400px;
+  right:140px;
+  width:8px;
+  height:60px;
+  background: darkmagenta;
+  transition: width 1s;
+}
+.c_ai:hover{
+  width:250px;
+  color:white;
+}
+.tag{
+  position: absolute;
+  top:1500px;
+  color:blue;
+  width:100%;
+  height:400px;
+}
+.text{
+  position: absolute;
+  top:650px;
+  left:23%;
+  color:black;
+  font-size:60px;
+}
+.footer{
+  position: absolute;
+  top:440%;
+  height: 800px;
+  width:100%;
+}
+.l{
+  position: absolute;
+  left:200px;
+  bottom: 100px;
+  height:50px;
+  width: 50px;
+  border-radius: 25px;
+}
+.last{
+  color:white;
+  background: rgb(20,30,30);
+  position: absolute;
+  width:100%;
+  height:80px;
+  bottom:0px;
+}
+.o{
+  color:white;
+}
+.o:hover{
+  text-decoration: underline;
+}
+
+    </style>
+    <title>html</title>
+    <script src="js.js"></script>
+  </head>
+
+  <body id="boxed" style="zoom:1;">
+    <div class="first-div">
+      <img src="nit-logo.png" style="height:150px;width:150px;float:left;">
+        <div class="name" style="position:absolute;">
+          <h1 style="font-size:35px;">National Institute of Technology,Srinagar<hr style="color:blue;background:blue;height:3px;"></h1>
+          <h3>Jammu & Kashmir, Pin code- 190006</h3>
+        </div>
+    </div>
+
+    <div class="bt"><center>
+         <div class="dropdown" id="op" ><a href="#sec" style=""><button type="button" onclick="" >HOME</button>
+        <div class="dropdowncontent">
+          <a href=" " style="color:black;"><p>About College</p></a><hr>
+          <a href=" " style="color:black;"><p>Vision and Mission</p></a><hr>
+          <a href=" " style="color:black;"><p>Brochure</p></a><hr>
+          <a href="#ania" style="color:black;"><p>Visitors Gallery</p></a><hr>
+          <a href=" " style="color:black;"><p>College Ranking</p></a>
+        </div>
+      </div>
+         <div class="dropdown" id="op" ><a href="#ac" style=""><button type="button" onclick="">ACADMIC</button>
+           <div class="dropdowncontent">
+             <a href=" " style="color:black;"><p>Faculties</p></a><hr>
+             <a href=" " style="color:black;"><p>College</p></a><hr>
+             <a href=" " style="color:black;"><p>Center/Institute</p></a><hr>
+             <a href=" " style="color:black;"><p>Campus of open Learning</p></a><hr>
+             <a href=" " style="color:black;"><p>Acadmic Calender</p></a><hr>
+             <a href=" " style="color:black;"><p>Colleges</p></a><hr>
+             <a href=" " style="color:black;"><p>Virtual Learning</p></a>
+           </div>
+         </div>
+         <div class="dropdown" id="op" ><a href="#about" style=""><button type="button" onclick="">DEPARTMENTS</button>
+           <div class="dropdowncontent">
+             <a href=" " style="color:black;"><p>Computer Science Engineering</p></a><hr>
+             <a href=" " style="color:black;"><p>Information Technology<img src="newblink.gif" style="height:18px;width:35px;"></p></a><hr>
+             <a href=" " style="color:black;"><p>Mechanical Engineering</p></a><hr>
+             <a href=" " style="color:black;"><p>Electrical Engineering</p></a><hr>
+             <a href=" " style="color:black;"><p>Electronics and Communications Engineering</p></a><hr>
+             <a href=" " style="color:black;"><p>Chemical Engineering</p></a><hr>
+             <a href=" " style="color:black;"><p>metallurgical Engineering</p></a>
+           </div>
+         </div>
+         <div class="dropdown" id="op" ><a href="#about" style=""><button type="button" onclick="">ADMISSION</button>
+           <div class="dropdowncontent">
+             <a href=" " style="color:black;"><p>B.Tech<img src="newblink.gif" style="height:18px;width:35px;"></p></a><hr>
+             <a href=" " style="color:black;"><p>M.Tech<img src="newblink.gif" style="height:18px;width:35px;"></p></a>
+           </div>
+         </div>
+         <div class="dropdown" id="op" ><a href="#about" style=""><button type="button" onclick="">LIBRARIES</button>
+           <div class="dropdowncontent">
+             <a href=" " style="color:black;"><p>NIT Libraries system</p></a><hr>
+             <a href=" " style="color:black;"><p>Search for article</p></a><hr>
+             <a href=" " style="color:black;"><p>e-Resources(A-Z)</p></a><hr>
+             <a href=" " style="color:black;"><p>Information Literacy</p></a>
+           </div>
+         </div>
+
+          <button type="button" onclick="">RESEARCH</button>
+
+         <div class="dropdown" id="op" ><a href="#about" style=""><button type="button" onclick="">CAMPUS</button>
+           <div class="dropdowncontent">
+             <a href=" " style="color:black;"><p>South Campus</p></a><hr>
+             <a href=" " style="color:black;"><p>East Campus</p></a><hr>
+             <a href=" " style="color:black;"><p>West Campus</p></a><hr>
+             <a href=" " style="color:black;"><p>North Campus</p></a>
+           </div>
+         </div>
+         <div class="dropdown" id="op" ><a href="#about" style=""><button type="button" onclick="">ADMINISTRATION</button>
+           <div class="dropdowncontent">
+             <a href=" " style="color:black;"><p>Directer</p></a><hr>
+             <a href=" " style="color:black;"><p>Dean of College</p></a><hr>
+             <a href=" " style="color:black;"><p>proctor</p></a><hr>
+             <a href=" " style="color:black;"><p>Resistar</p></a><hr>
+             <a href=" " style="color:black;"><p>Finance Officer</p></a><hr>
+             <a href=" " style="color:black;"><p>Deans</p></a><hr>
+             <a href=" " style="color:black;"><p>Administrative Officer</p></a>
+           </div>
+         </div>
+
+         <div class="dropdown" id="op" ><a href="#about" style=""><button type="button" onclick="">TENDERS</button>
+           <div class="dropdowncontent">
+             <a href=" " style="color:black;"><p>Central Office</p></a><hr>
+             <a href=" " style="color:black;"><p>Colleges</p></a><hr>
+             <a href=" " style="color:black;"><p>Electrical Engineering</p></a><hr>
+             <a href=" " style="color:black;"><p>General Branch</p></a><hr>
+             <a href=" " style="color:black;"><p>Procurement</p></a><hr>
+             <a href=" " style="color:black;"><p>Tender Archive</p></a><hr>
+           </div>
+         </div>
+
+         <button type="button"><a  href="D:\web devlopment\practical2\Sign up page\index.html" style="color:white">SIGN UP</a></button>
+         </center>
+</div>
+
+  <div class="second-div">
+    <div class="bt2" style="position:absolute;top:2550px;left:550px;height:370px;width:400px;;background:linear-gradient(white,gray);margin:1px;padding:5px;border:1px black;box-shadow:black 1px 1px 10px 1px;">
+      <button type="button" name="button" onclick="changeToLatest()" style="color:black">Latest</button>
+      <button type="button" name="button" onclick="changeToNews()" style="color:black">News</button>
+      <button type="button" name="button" onclick="changeToNotifications()" style="color:black">Notifications</button>
+      <hr style="padding:0;background:black;">
+      <div class="box" id="latest">
+        <a href="#"><img src="images/newblink.gif" width="35px" height="25px" alt="">College is going through <br> the harsh conditions. <sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a>
+       <br> <a href="#"><img src="images/newblink.gif" width="35px" height="25px" alt="">College is going through the harsh conditions. <sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a>
+       <br> <a href="#"><img src="images/newblink.gif" width="35px" height="25px" alt="">College is going through the harsh conditions. <sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a>
+       <br> <a href="#">College is going through the harsh conditions. <sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a>
+       <br> <a href="#">College is going through the harsh conditions. <sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a>
+        </div>
+      <div class="box" id="News">
+        <a href="#"><img src="images/newblink.gif" width="35px" height="25px" alt="">fuck fuck nothing is visible.<sub style="font-size: 10px;color:red">posted on Dec 9,2019</sub></a><br>
+            <a href="#"><img src="images/newblink.gif" width="35px" height="25px" alt="">Fuck too much cold.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#"><img src="images/newblink.gif" width="35px" height="25px" alt="">Exams are from 21st of December.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Exams are from 21st of December.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Exams are from 21st of December.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Exams are from 21st of December.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Exams are from 21st of December.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Exams are from 21st of December.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Exams are from 21st of December.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+        </div>
+      <div class="box" id="Notifications">
+        <a href="#"><img src="images/newblink.gif" width="35px" height="25px" alt="">Updated Datesheet is not uploaded yet.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#"><img src="images/newblink.gif" width="35px" height="25px" alt="">Updated Datesheet is not uploaded yet.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Updated Datesheet is not uploaded yet.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Updated Datesheet is not uploaded yet.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Updated Datesheet is not uploaded yet.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Updated Datesheet is not uploaded yet.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Updated Datesheet is not uploaded yet.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+            <a href="#">Updated Datesheet is not uploaded yet.<sub style="font-size: 10px;color:rgb(86, 83, 83)">posted on Dec 6,2019</sub></a><br>
+      </div>
+
+    </div>
+    <img src="op2.jpg" alt="" style="position:absolute;width:100%;height:700px;">
+      <div class="ani" id="ania">
+      </div>
+        <div class="content">
+          <center><h1 style="font-size:60px;position:relative;left:360px;top:400px;text-shadow: chartreuse;">A <u>Foundation</u> of Learning</h1></center>
+        </div>
+        <div class="c_ani" id="ac">
+          <p><h3>&nbsp&nbspExplore&nbspAcadmic</h3></p>
+        </div>
+            <div style="width:40%;position:absolute;top:1000px;left:50%;background-color:darkmagenta;border-top-left-radius:25px;border-bottom-left-radius:25px;color:white;box-shadow:5px 5px 20px 5px black;">
+              <center><h3 class="h3">As a private university located near the Rocky Mountains,
+                             we empower students who want to make a difference. Based in
+                             south Denver and with over 300 academic programs, we serve
+                             about 12,000 graduate and undergraduate students. Our
+                             classroom academics, hands-on educational experiences and
+                             global learning adventures put students on the path toward
+                             lives and careers that will shape the world.
+                           </h3>
+                         </center>
+            </div>
+            <div style="width:40%;position:absolute;top:1250px;left:200px;background-color:darkmagenta;border-top-right-radius:25px;border-bottom-right-radius:25px;color:white;box-shadow:5px 5px 20px 5px black;">
+              <center><h3> A DU education takes you out of the classroom to work with communities
+                 where you can learn through collaboration and real-world experience.
+                 Our academic programs connect you to professional and civic experiences
+                  that help you prepare for life after graduation.
+                We’re a student-centered research university, developing knowledge to
+                 tackle challenges worldwide. Whether you’re researching Alzheimer’s,
+                 sustainable technologies or the needs of underserved communities,
+                 you’ll have the resources and support to make your discoveries at
+                  home and abroad.
+              </h3>
+            </center>
+            </div>
+            <div class="c_ai">
+              <p><h3 style="position:absolute;right:10px;top:0px;">&nbsp&nbspOutside&nbspThe&nbspClassroom</h3></p>
+            </div>
+            <div class="tag">
+              <h4 style="position:absolute;font-size:100px;left:100px;">57.8%</h4>
+              <h4 style="position:absolute;font-size:50px;left:150px;top:200px;">of our</h4>
+              <h4 style="position:absolute;font-size:50px;left:90px;top:245px;">undergrads</h4>
+              <h4 style="position:absolute;font-size:50px;left:80px;top:290px;">study abroad</h4>
+
+
+              <h4 style="position:absolute;font-size:100px;left:500px;">1,200+</h4>
+              <h4 style="position:absolute;font-size:50px;left:495px;top:200px;">students from</h4>
+              <h4 style="position:absolute;font-size:50px;left:520px;top:245px;">outside the</h4>
+              <h4 style="position:absolute;font-size:50px;left:570px;top:290px;">INDIA</h4>
+
+              <h4 style="position:absolute;font-size:100px;left:1000px;">145</h4>
+              <h4 style="position:absolute;font-size:50px;left:950px;top:200px;">countries are</h4>
+              <h4 style="position:absolute;font-size:50px;left:920px;top:245px;">home to alumni</h4>
+            <div>
+              <div class="photo">
+                <img src="mhrd.png" alt="" style="height:200px;width:300px;position:absolute;top:1550px;left:150px;">
+                <img src="satyamev jayte.jpg" alt="" style="height:200px;width:200px;position:absolute;top:1550px;left:650px;">
+                <img src="made in india.jpg" alt="" style="height:200px;width:300px;position:absolute;top:1550px;left:1030px;">
+                  <img src="digital india.png" alt="" style="height:148px;width:260px;position:absolute;top:-1680.23px;left:1228px;z-index:1;">
+              </div>
+              <div class="content">
+                <center><h1 style="font-size:60px;position:relative;left:560px;top:1800px;text-shadow: chartreuse;color:black;"> Contact&nbspUs</h1></center>
+                <input type="text" name="" value="" style="position:absolute;height:100px;width:800px;top:1950px;left:200px;border-radius:20px;">
+                <input type="button" onclick="#home" name="" value="Submit" style="position:absolute;height:105px;width:200px;top:1950px;left:1020px;border-radius:20px;background:grey;">
+              </div>
+     </div>
+       <div class="footer">
+         <img src="map-image.png" style="width:100%;height:400px">
+         <div class="f2">
+           <a href="#"><p style="color:white;position:absolute;left:16%;bottom:40%;">Services</p>
+           <p style="color:grey;position:absolute;left:15%;bottom:37%;">Devlopment</p>
+           <p style="color:grey;position:absolute;left:15%;bottom:34%;">Competitive</p>
+
+           <p style="color:white;position:absolute;left:36.5%;bottom:40%;">Important Links</p>
+           <p style="color:grey;position:absolute;left:37%;bottom:37%;">Campus Tour</p>
+           <p style="color:grey;position:absolute;left:37%;bottom:34%;">Media Courage</p>
+
+           <img src="Mobile-slides.png" style="position:absolute;bottom:30%;left:64%;height:150px;width:80px;">
+           <p style="color:white;position:absolute;left:74.5%;bottom:42%;">Download App</p>
+           <img src="android.png" style="position:absolute;left:74%;bottom:39%;height:30px;width:140px;">
+           <img src="ios.png" style="position:absolute;left:74%;bottom:34%;height:30px;width:140px;">
+           </a>
+           <div>
+             <div>
+               <h1 style="color:white;position:absolute;bottom:95px;left:200px;">Follow Us:-</h1>
+               <a href="#"><img class="l" src="twitter.png" alt="" style="position:absolute;left:550px;"></a>
+               <a href="#"><img class="l" src="facebook.jpg" alt="" style="position:absolute;left:700px;"></a>
+               <a href="#"><img class="l" src="instagram.png" alt="" style="position:absolute;left:850px;"></a>
+             </div>
+             <div class="last">
+               <center style="margin-top: 30px;">
+               <a class="o" href="#">Maps</a>&nbsp&nbsp&nbsp&nbsp
+               <a class="o" href="#">Jobs</a>&nbsp&nbsp&nbsp&nbsp
+               <a class="o" href="#">Contact</a>&nbsp&nbsp&nbsp&nbsp
+               <a class="o" href="#">privacy&nbspPolicy</a>&nbsp&nbsp&nbsp&nbsp
+               <a class="o" href="#">Feedback</a>&nbsp&nbsp&nbsp&nbsp
+               <a class="o" href="#">Cookies</a>&nbsp&nbsp&nbsp&nbsp
+               <a class="o" href="#">Disclosers</a>
+             </center>
+             </div>
+             <hr style="position:absolute;width:99.8%;background-color:black;bottom:170px;">
+             <hr style="position:absolute;width:99.8%;background-color:black;bottom:70px;">
+       </div>
+
+  </body>
+</html>

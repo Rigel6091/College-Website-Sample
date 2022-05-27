@@ -1,0 +1,92 @@
+body {
+  background: aquamarine;
+}
+
+.sign-up-page {
+  margin-top: 60px;
+  font-family: sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  display: block;
+  text-align: center;
+}
+
+.login {
+  position: absolute;
+}
+
+.logo {
+  height: 35px;
+}
+
+.credentials {
+  background: white;
+  width: 400px;
+  margin-top: 30px;
+  border: 0 black solid;
+  border-radius: 3px;
+}
+
+.credentials label, .credentials input, .credentials button {
+  display: block;
+  margin-top: 20px;
+}
+
+.credentials label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.credentials input {
+  width: 292px;
+  border: 2px  rgba(0,0,0,0.2) solid;
+  padding: 15px 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.credentials button {
+  width: 320px;
+  padding: 15px 12px;
+  border-radius: 5px;
+  background-color: rgba(0,150,0,1);
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.credentials button:hover {
+  background-color: rgba(0,50,0,1);
+}
+
+fieldset {
+  margin: 0;
+  border: none;
+  padding: 10px 40px 50px;
+  position: relative;
+}
+
+.forgot {
+  margin-top: 10px;
+  color: rgba(0,0,0,0.5);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.login {
+  color: white;
+  font-weight: bold;
+  font-size:0.95rem;
+  position: absolute;
+  width:400px;
+  bottom: -50px;
+  right: 0;
+}
